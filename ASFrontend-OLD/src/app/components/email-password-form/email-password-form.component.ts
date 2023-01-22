@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { EmailPassword } from 'src/app/interfaces/email-password';
 
@@ -12,10 +12,10 @@ export class EmailPasswordFormComponent implements OnInit {
   @Output() submitEvent: EventEmitter<EmailPassword> =
     new EventEmitter<EmailPassword>();
 
-  frmEmailPassword: FormGroup;
+  frmEmailPassword: UntypedFormGroup;
 
   constructor(
-    private fb: FormBuilder,
+    private fb: UntypedFormBuilder,
     private router: Router,
     private route: ActivatedRoute
   ) {

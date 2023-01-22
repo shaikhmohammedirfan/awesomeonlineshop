@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { UntypedFormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { usermaster } from 'src/app/interfaces/umaster';
 
 @Component({
@@ -11,7 +11,7 @@ export class UsermasterFormComponent implements OnInit {
   public usermasterform = this.fb.group({
     USERNAME: ['', [Validators.required]],
   });
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: UntypedFormBuilder) {}
   @Input() usermasterdata: any;
 
   ngOnInit(): void {
