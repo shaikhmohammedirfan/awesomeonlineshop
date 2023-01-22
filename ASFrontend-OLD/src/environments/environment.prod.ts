@@ -22,7 +22,4 @@ export const environment = {
     measurementId: 'G-MBDLTX2K8P',
   },
   pageTitle: '',
-  recaptcha: {
-    siteKey: '6LdkXRkkAAAAAJqGtH6SfQcM1JwzjM6StDhKUhm8',
-  },
 };

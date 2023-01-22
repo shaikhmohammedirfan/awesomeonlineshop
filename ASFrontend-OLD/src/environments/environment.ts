@@ -25,9 +25,6 @@ export const environment = {
     appId: '1:820160978862:web:74cc038e270205597cf23f',
     measurementId: 'G-MBDLTX2K8P',
   },
-  recaptcha: {
-    siteKey: '6LdkXRkkAAAAAJqGtH6SfQcM1JwzjM6StDhKUhm8',
-  },
   pageTitle: '',
 };
 
