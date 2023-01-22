@@ -1,0 +1,54 @@
+// ----
+h3 {
+  margin-bottom: 0px;
+}
+// horizontal scrollbar code
+div.scrollmenu {
+  // width: 90%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  // background-color: rgb(68, 71, 77);
+  // To show scrollbar
+  overflow: auto;
+
+  // To hide scroll bar
+  //overflow: hidden;
+
+  white-space: nowrap;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: rgba(136, 135, 135, 0.938);
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.TextDarkGray {
+  font-size: 3vw;
+}
+.thumbnails {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.list-thumbnail {
+  height: 100%;
+  white-space: nowrap;
+}
+
+.img-thumb {
+  display: inline-block;
+  padding: 3px;
+  margin: 0 2px 0 0;
+}
+// -- end of code for To customize scrollbar ---

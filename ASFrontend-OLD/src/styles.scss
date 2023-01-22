@@ -1,0 +1,299 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  // height: 100%;
+  width: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emailform-card {
+  width: 175px;
+  height: 150px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 20px;
+  margin: 2px;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+// **** Buttons css *** //
+
+// Button css
+.btn:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.btn-dark {
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-submit {
+  background: #055377;
+  color: white;
+  text-align: center;
+  font-size: 9px;
+  width: 50px;
+  padding: 5px;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+// .closeBtnRight {
+//   float: right;
+//   width: 45px;
+//   height: 40px;
+//   min-width: 0px !important;
+//   padding: 0px !important;
+// }
+
+.closeBtnRight {
+  float: right;
+  width: 25px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.matSmallBar {
+  background: #055377;
+  color: white;
+  padding: 10px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.md-toolbar-tools {
+  background: #055377;
+  color: white;
+  height: 35px;
+  font-size: 15px;
+  font-weight: 400;
+}
+// // End of code for button css
+
+.tabSpace {
+  padding-left: 80px;
+}
+
+.errMessage {
+  font-size: calc(0.9rem + 0.9vw);
+  font-weight: 100;
+  line-height: 1.2;
+
+  color: red;
+  // font-size: 25px;
+  // padding-top: 10px;
+  // font-weight: 200;
+  text-align: center;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item {
+  background: rgb(53, 58, 68);
+  padding: 5px;
+  width: 60px;
+  height: 35px;
+  margin: 3px;
+
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error.mat-snack-bar-container {
+  background-color: rgb(66, 19, 19);
+  color: white;
+  border-radius: 10px;
+}
+
+.success.mat-snack-bar-container {
+  background-image: linear-gradient(160deg, #000000 20%, #335063 74%);
+  color: white;
+  border-radius: 10px;
+}
+
+.smallText {
+  font-size: 12px;
+}
+
+// Core HTML classes
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 1px;
+}
+
+.containerSM {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.containerLG {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Text classes
+.GrayText {
+  color: gray;
+}
+.RegularFont {
+  font-size: 1rem;
+}
+.LFont {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.XLFont {
+  font-size: 5rem;
+  line-height: 1.5;
+}
+
+.SFont {
+  font-size: 0.8rem;
+}
+
+.XSFont {
+  font-size: 0.5rem;
+}
+
+// Boostrap classes copied
+
+.container-fluid {
+  width: 100%;
+  font-size: 1rem;
+  color: black;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  // height: calc(100% - 60px);
+}
+
+.display-2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}

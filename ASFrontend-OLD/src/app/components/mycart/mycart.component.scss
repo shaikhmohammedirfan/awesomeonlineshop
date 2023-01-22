@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+.container {
+  border: 6px solid black;
+  display: flex;
+
+  height: 800px;
+}
+.flex-item {
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.item-1 {
+  background-color: red;
+}

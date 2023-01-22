@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">awesomeshop</string>
+    <string name="title_activity_main">awesomeshop</string>
+    <string name="package_name">com.awesomeshop.frontend</string>
+    <string name="custom_url_scheme">com.awesomeshop.frontend</string>
+</resources>
