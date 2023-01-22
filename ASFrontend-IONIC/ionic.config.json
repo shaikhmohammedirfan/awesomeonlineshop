@@ -1,0 +1,7 @@
+{
+  "name": "ASFrontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

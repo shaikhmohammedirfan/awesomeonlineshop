@@ -1,0 +1,58 @@
+#cart-badge {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  font-size: 10px;
+  background-color: transparent;
+  color: black;
+}
+
+// For Desltops/larg screens
+@media (min-width: 768px) {
+  ion-mobile {
+    font-size: 8px;
+  }
+  // Do not display mobile header
+  .mobile-header {
+    display: none;
+  }
+  // Display regular header
+  .header {
+    display: flex;
+    // background: #fff;
+    // padding-left: 40px;
+    // padding-right: 40px;
+  }
+}
+
+// For Small Desktop/Tablet screens
+@media (max-width: 950px) {
+  ion-button {
+    font-size: 10px;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 1219px) {
+  ion-button {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+// For Mobile phone/smaller screens
+@media (max-width: 768px) {
+  // Display mobile header
+  .mobile-header {
+    display: block;
+  }
+
+  // Do not display regular header
+  .header {
+    display: none;
+  }
+}
+
+.active-item {
+  border-bottom: 2px solid var(--ion-color-primary);
+}

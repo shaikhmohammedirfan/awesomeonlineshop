@@ -1,0 +1,70 @@
+<div
+  class="jumbotron jumbotronBlue mat-elevation-z8 TextWhite"
+  style="margin-left: auto; margin-right: auto; color: white; font-size: 14px"
+>
+  &nbsp; Sign in with:
+  <button class="closeBtnRight" (click)="closeForm()">X</button>
+  <div class="flex-container">
+    <button class="flex-item" type="button" (click)="googleSignIn()">
+      Google
+    </button>
+
+    <button class="flex-item">Facebook</button>
+
+    <button class="flex-item">Twitter</button>
+
+    <button class="flex-item">OTP</button>
+  </div>
+  <br />
+
+  <a
+    style="
+      font-size: 20px;
+      font-weight: bolder;
+      color: white;
+      display: flex;
+      justify-content: center;
+    "
+  >
+    OR
+  </a>
+  <br />
+  <app-email-password-form
+    (submitEvent)="frmSubmitting($event)"
+  ></app-email-password-form>
+
+  <div *ngIf="error" style="color: rgb(224, 121, 24); text-align: center">
+    <strong>Error:</strong> {{ this.error }}
+  </div>
+
+  <!-- <app-alert-modal
+    [error]="popupmessage"
+    *ngIf="popupmessage"
+    (close)="popupmessage = null"
+  ></app-alert-modal> -->
+  <br />
+
+  <div style="margin-left: 5px; margin-right: auto; margin-top: 95px">
+    <ion-button
+      type="button"
+      routerLink="signup"
+      expand="block"
+      color="light"
+      fill="clear"
+      style="float: left; font-size: 11px"
+      >Create new account
+    </ion-button>
+  </div>
+
+  <div style="margin-left: auto; margin-right: 5px">
+    <ion-button
+      type="button"
+      routerLink="/signup"
+      expand="block"
+      color="light"
+      fill="clear"
+      style="float: right; font-size: 11px"
+      >Send OTP
+    </ion-button>
+  </div>
+</div>

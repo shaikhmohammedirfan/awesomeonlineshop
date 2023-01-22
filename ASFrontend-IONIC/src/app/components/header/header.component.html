@@ -1,0 +1,91 @@
+<!-- Header for Mobile phone/Small screens -->
+<ion-header class="mobile-header" style="background: black">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="mainMenu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/mycart">
+        <ion-icon slot="icon-only" name="cart"></ion-icon>
+        <ion-badge id="cart-badge">{{ cartCount }}</ion-badge>
+      </ion-button>
+
+      <ion-button fill="clear" color="dark" routerLink="/userlogin">
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" color="dark" routerLink="/sign-up-options">
+        <ion-icon slot="icon-only" name="person-add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Header for Desktops/Large screens -->
+<ion-row
+  class="header ion-align-items-center"
+  style="background-color: rgba(212, 212, 212, 0.575)"
+>
+  <ion-col size="1" class="ion-align-items-center">
+    <img src="../../../assets/images/awesomeshop.png" width="50px" />
+  </ion-col>
+  <ion-col size="8" class="ion-text-left">
+    <ion-button
+      fill="clear"
+      color="dark"
+      routerLink="/"
+      routerDirection="root"
+      routerLinkActive="active-item"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Home
+    </ion-button>
+
+    <ion-button
+      #categorybtn
+      fill="clear"
+      color="dark"
+      routerLink="/categories"
+      routerDirection="root"
+      routerLinkActive="active-item"
+    >
+      Shop By Category
+    </ion-button>
+
+    <ion-button
+      #brandbtn
+      fill="clear"
+      color="dark"
+      routerLink="/brands"
+      routerDirection="root"
+      routerLinkActive="active-item"
+    >
+      Shop By Brand
+    </ion-button>
+
+    <ion-button
+      fill="clear"
+      color="dark"
+      routerLink="/myaccount"
+      routerDirection="root"
+      routerLinkActive="active-item"
+    >
+      My Account
+    </ion-button>
+  </ion-col>
+  <ion-col size="3" class="ion-text-right">
+    <ion-button fill="clear" color="dark" routerLink="/mycart">
+      <ion-icon slot="icon-only" name="cart"></ion-icon>
+      <ion-badge id="cart-badge">{{ cartCount }}</ion-badge>
+    </ion-button>
+
+    <ion-button fill="clear" color="dark" routerLink="/userlogin">
+      <ion-icon slot="icon-only" name="person"></ion-icon>
+    </ion-button>
+
+    <ion-button fill="clear" color="dark" routerLink="/sign-up-options">
+      <ion-icon slot="icon-only" name="person-add"></ion-icon>
+    </ion-button>
+  </ion-col>
+</ion-row>

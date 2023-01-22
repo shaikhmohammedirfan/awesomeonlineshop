@@ -1,0 +1,76 @@
+<form
+  [formGroup]="frmAddCategory"
+  (ngSubmit)="onSubmit(this.frmAddCategory.value)"
+>
+  <mat-form-field>
+    <input
+      matInput
+      id="categorycode"
+      type="text"
+      placeholder="Category Code"
+      formControlName="categorycode"
+    />
+    <mat-error
+      *ngIf="frmAddCategory.controls['categorycode']?.errors?.['required']"
+    >
+      Category Code cannot be null/blank!
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input
+      matInput
+      id="categoryname"
+      type="text"
+      placeholder="Description"
+      formControlName="categoryname"
+    />
+    <mat-error
+      *ngIf="frmAddCategory.controls['categoryname']?.errors?.['required']"
+    >
+      Category Name cannot be null/blank!
+    </mat-error>
+  </mat-form-field>
+
+  <!-- <input type="file" id="imageurl" (Change)="uploadFile($event)" /> -->
+  <input
+    mat-input
+    (change)="uploadFile($event)"
+    #fileInput
+    type="file"
+    id="imageurl"
+    formControlName="imageurl"
+  />
+  <!-- <mat-form-field>
+    <input
+      matInput
+      id="imageurl"
+      placeholder="Image URL"
+      formControlName="imageurl"
+      (Change)="uploadFile($event)"
+    />
+    <mat-error
+      *ngIf="frmAddCategory.controls['imageurl']?.errors?.['required']"
+    >
+      Category Image URL cannot be null/blank!
+    </mat-error>
+  </mat-form-field> -->
+
+  <!-- <mat-form-field>
+    <input
+      matInput
+      id="imageurl"
+      type="file"
+      (change)="upload($event)"
+      placeholder="Image URL"
+      formControlName="imageurl"
+    />
+    <mat-error
+      *ngIf="frmAddCategory.controls['imageurl']?.errors?.['required']"
+    >
+      Category Image URL cannot be null/blank!
+    </mat-error>
+  </mat-form-field> -->
+
+  <button type="submit">Submit</button>
+</form>

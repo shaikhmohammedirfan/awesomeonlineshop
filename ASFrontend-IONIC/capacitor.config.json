@@ -1,0 +1,6 @@
+{
+  "appId": "com.awesomesoftech.asfrontend",
+  "appName": "ASFrontend",
+  "webDir": "dist/ASFrontend",
+  "bundledWebRuntime": false
+}

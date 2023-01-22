@@ -1,0 +1,11 @@
+<div class="flex-container">
+  <div class="flex-items" *ngFor="let category of categories">
+    <div class="card">
+      <span class="fixed-width">{{ category.categoryName }}</span>
+
+      <span
+        ><img mat-card-image [src]="category.imageURL" alt="category pic"
+      /></span>
+    </div>
+  </div>
+</div>
