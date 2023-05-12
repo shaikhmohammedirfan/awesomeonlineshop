@@ -1,0 +1,120 @@
+<mat-toolbar class="toolbar navbar">
+  <button
+    type="button"
+    aria-label="Toggle sidenav"
+    mat-icon-button
+    (click)="sidenav.toggle()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span routerLink="/" class="display-2 spacer">AwesomeOnlineShop</span>
+
+  <!-- <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <span matPrefix> </span>
+      <input
+        type="tel"
+        matInput
+        placeholder="Search"
+        name="search"
+        [(ngModel)]="search"
+      />
+      <button matSuffix mat-button><mat-icon>search</mat-icon></button>
+    </mat-form-field>
+    <br />
+    Search
+  </form> -->
+  <span routerLink="/"
+    ><img
+      src="../../../assets/images/awesomeshop.png"
+      class=".brandlogo"
+      width="50px"
+      href="/"
+  /></span>
+
+  <!-- <span class="">{{ this.env.PageTitle }} </span> -->
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push" [opened]="false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/" id="home">
+        <mat-icon>home</mat-icon>
+        Home</a
+      >
+      <a
+        mat-list-item
+        routerLink="/categories"
+        id="ShopByCategory"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>blur_linear</mat-icon>
+        ShopByCategory</a
+      >
+      <a
+        mat-list-item
+        routerLink="/brands"
+        id="ShopByBrand"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>blur_on</mat-icon>
+        ShopByBrand</a
+      >
+      <a
+        mat-list-item
+        (click)="sidenav.close()"
+        routerLink="/allproducts"
+        id="AllProducts"
+      >
+        <mat-icon>art_track</mat-icon>
+        AllProducts</a
+      >
+      <a
+        mat-list-item
+        routerLink="/myaccount"
+        id="MyAccount"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>supervised_user_circle</mat-icon>
+        MyAccount</a
+      >
+      <a
+        mat-list-item
+        (click)="sidenav.close()"
+        routerLink="/mycart"
+        id="MyCart"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>shopping_cart</mat-icon>MyCart</a
+      >
+      <a
+        mat-list-item
+        routerLink="/mywishlist"
+        id="MyWishList"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>favorite</mat-icon>MyWishList</a
+      >
+      <a
+        mat-list-item
+        routerLink="/userlogin"
+        id="Login"
+        (click)="sidenav.close()"
+      >
+        <mat-icon>login</mat-icon>Login</a
+      >
+      <a
+        mat-list-item
+        (click)="sidenav.close()"
+        routerLink="/sign-up-options"
+        id="Signup"
+      >
+        <mat-icon>account_circle</mat-icon>Register</a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <app-footer></app-footer> -->

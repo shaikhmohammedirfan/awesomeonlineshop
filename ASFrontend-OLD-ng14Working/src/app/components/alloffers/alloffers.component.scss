@@ -1,0 +1,139 @@
+* {
+  // To include padding, margin and border size within elements size
+  // otherwise system will calculate width + padding + border = actual element width
+  // height + padding + border = actual element height
+
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+// .package-card {
+//   width: 175px;
+//   height: 250px;
+//   background-color: #fff;
+//   border-radius: 5px;
+//   padding: 10px;
+//   padding-top: 20px;
+//   margin: 2px;
+//   font-size: 12px;
+//   text-align: center;
+//   letter-spacing: 1px;
+//   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+//   overflow: hidden;
+//   position: relative;
+//   z-index: 0;
+// }
+// .package-card button {
+//   background-color: #055377;
+//   color: white;
+//   border-radius: 5px;
+//   border: none;
+//   font-size: 10px;
+//   padding: 5px;
+// }
+
+// .fixedLineText {
+//   line-height: 1.5em;
+//   height: 4.5em;
+//   word-wrap: break-word;
+//   overflow: hidden;
+//   white-space: wrap;
+//   text-overflow: ellipsis;
+//   width: 100%;
+//   font-size: 12px;
+//   font-weight: bold;
+// }
+
+// .card-container {
+//   display: inline-block;
+//   padding: 3px;
+//   // margin: top,right,bottom,left
+//   margin: 10px;
+// }
+
+// .pack-card-image {
+//   height: 75px;
+//   width: 120px;
+// }
+
+// .imgCtrl {
+//   width: 60px;
+//   height: 60px;
+// }
+
+.container {
+  padding: 10px;
+}
+
+mat-card {
+  // background-color: #eaeff0;
+  border: solid thin;
+  border-radius: 5px;
+  padding: 10px;
+  width: 140px;
+
+  height: 210px;
+  margin: 5px;
+  text-align: center;
+  justify-content: centre;
+  cursor: pointer;
+}
+mat-card-title {
+  // Code for fixed 3 line text
+  height: 38px;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  //
+
+  font-size: 10px;
+  font-weight: 600;
+  color: black;
+  padding-left: 2px;
+  padding-right: 2px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+img.mat-card-image {
+  display: block;
+  font-size: 10px;
+
+  width: 70px;
+  max-width: 70px;
+  height: 80px;
+  max-height: 80px;
+  margin-bottom: 2px;
+  justify-content: left;
+}
+
+mat-label {
+  font-size: 10px;
+}
+mat-card-content button {
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+}
+.mat-card-header p {
+  justify-content: right;
+  margin-left: 10px;
+  padding: 5px;
+  height: 30px;
+}
+
+.card-container {
+  display: inline-block;
+  padding: 3px;
+}
+
+.display-2 {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(185, 17, 17);
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}

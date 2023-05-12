@@ -1,0 +1,54 @@
+<!-- <div
+  fxLayout="row wrap"
+  fxLayoutGap="5%"
+  fxLayoutAlign="center center"
+  class="container"
+  style="margin-left: 12%; margin-right: 12%"
+> -->
+<!-- fxLayout="row wrap - use to wrap the items/cards to next row -->
+<!-- fxLayoutGap- use to insert gap between 2 items/cards -->
+<!-- fxLayoutAlign- use to make items/cards center aligned -->
+
+<!-- <div
+    fxFlex.lg="20%"
+    fxFlex.md="25%"
+    fxFlex.sm="45%"
+    fxFlex.xs="100%"
+    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+  > -->
+<!-- fxFlex.lg="20%" - each item/card occupy 20% of large screens/desktops -->
+<!-- fxFlex.md="25%"- each item/card occupy 25% of medium size screens/tabletes -->
+<!-- fxFlex.sm="45%"- each item/card occupy 45% of small size screens/tabletes/mobiles phones -->
+<!-- fxFlex.xs="100%" - each item/card occupy 100% of very small size screens/mobile phones,one item on whole screen -->
+<!-- <div class="grid-item" fxLayout="row" fxLayoutAlign="center center">
+      {{ "Item " + i }}
+    </div>
+  </div>
+</div> -->
+
+<div class="card-container" *ngFor="let category of categories">
+  <mat-card>
+    <mat-card-header>
+      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+
+      <img mat-card-image src="{{ category.imageURL }}" alt="Category Pic" />
+
+      <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-card-title>
+        {{ category.categoryName }}
+      </mat-card-title>
+      <!-- <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz
+        breeds of dog from Japan. A small, agile dog that copes very well with
+        mountainous terrain, the Shiba Inu was originally bred for hunting.
+      </p> -->
+    </mat-card-content>
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+</div>

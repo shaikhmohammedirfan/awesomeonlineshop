@@ -1,0 +1,6 @@
+{
+	"appId": "com.awesomeshop.frontend",
+	"appName": "awesomeshop",
+	"webDir": "dist/asfrontend",
+	"bundledWebRuntime": false
+}

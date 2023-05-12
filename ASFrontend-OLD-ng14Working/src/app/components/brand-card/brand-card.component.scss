@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  border: solid thin;
+  justify-content: center;
+}
+
+.flex-item {
+  color: black;
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+}
+
+mat-card {
+  // background-color: #eaeff0;
+  border: solid thin;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+
+  // min-width: 100px;
+  // max-width: 100px;
+  height: 120px;
+
+  margin: 5px;
+  text-align: center;
+  justify-content: centre;
+  cursor: pointer;
+}
+// .product {
+//   padding: 20px 0;
+// }
+.slider-wrap {
+  display: relative;
+  overflow: hidden;
+  height: 150px;
+}
+
+.slider-main {
+  display: absolute;
+  width: 300%;
+}
+
+.item {
+  display: inline-block;
+  // background-color: red;
+  width: 150px;
+  height: 45px;
+  position: relative;
+  margin: 0 12px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.prev {
+  position: absolute;
+  left: 0px;
+  margin-left: 5px;
+  // top: 520px;
+  //transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+.next {
+  position: absolute;
+  right: 0px;
+  margin-right: 5px;
+  // top: 520px;
+  //transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+// .container {
+//   padding: 10px;
+// }
+
+// mat-card {
+//   background-color: #eaeff0;
+//   border-radius: 5px;
+//   padding: 10px;
+//   width: 200px;
+
+//   min-width: 200px;
+//   height: 45px;
+//   margin: 5px;
+//   text-align: center;
+// }
+
+// .mat-card-header {
+//   justify-content: centre; /* for center*/
+// }
+// .img-thumb {
+//   display: inline-block;
+//   padding: 3px;
+// }

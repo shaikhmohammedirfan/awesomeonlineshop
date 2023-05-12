@@ -1,0 +1,122 @@
+<div class="card-container" *ngFor="let p of products">
+  <mat-card>
+    <mat-card-header>
+      <img
+        mat-card-image
+        src="{{ p.productImageURL }}"
+        data-src="img/digital.jpg"
+        alt="Category Pic"
+      />
+      <p class="display-2">{{ p.offerPCT | number: "1.0-2" }}%</p>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-card-title>
+        {{ p.productName }}
+      </mat-card-title>
+      <mat-label>Original Price:</mat-label>
+      <s style="color: gray">{{ p.price }}</s>
+      <br />
+      <mat-label>Now:</mat-label>
+      <b>{{ p.offerPrice }}</b>
+      <br />
+
+      <button fill="clear">
+        <mat-icon name="add" slot="icon-only"></mat-icon>
+      </button>
+      &nbsp;
+      <button>
+        <mat-icon name="remove" slot="icon-only"></mat-icon>
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- <div class="card-container" *ngFor="let p of products">
+  <div class="package-card">
+    <div
+      class="grid-wrapper"
+      style="font-size: 15px; grid-template-columns: 110px 50px"
+    >
+      <span class="imgCtrl">
+        <img
+          class="pack-card-image"
+          [src]="p.productImageURL"
+          alt="Product pic"
+        />
+      </span>
+      <span style="font-weight: bolder; color: red"
+        >{{ p.offerPCT | number: "1.0-2" }}%off</span
+      >
+    </div>
+    <br />
+    <p class="fixedLineText">{{ p.productName }}</p>
+
+    <label>Original Price:</label>
+    <s style="color: gray">{{ p.price }}</s>
+    <br />
+    <label>Now:</label>
+    <b>{{ p.offerPrice }}</b>
+    <br />
+    <button (click)="addToCart($event, p)">AddToCart</button>
+    &nbsp;
+    <button>Details</button>
+  </div>
+</div> -->
+
+<!-- <mat-card>
+    <mat-card-header>
+      <div>
+        <br />
+
+        <img
+          class="row"
+          mat-card-image
+          [src]="p.productImageURL"
+          alt="Photo of a hotel"
+        />
+      </div>
+
+      <mat-card-subtitle
+        >{{ p.offerPCT | number: "1.0-2" }}%off</mat-card-subtitle
+      >
+    </mat-card-header> -->
+<!-- <div class="imgContainer">
+          <img
+            class="mat-card-avatar"
+            [src]="p.productImageURL"
+            alt="Product Image"
+          />
+        </div> -->
+
+<!-- <mat-card-content>
+      <mat-card-title class="fixedLineText">
+        {{ p.productName }}
+      </mat-card-title>
+      <mat-label style="color: gray; font-weight: inherit"
+        >Original Price:</mat-label
+      >
+      <s style="color: gray">{{ p.price }}</s>
+      <br />
+      <mat-label>Now:</mat-label>
+      <b>{{ p.offerPrice }}</b>
+      <mat-row slot="end" class="">
+        <span size="5">
+          <button fill="clear">
+            <mat-icon name="add" slot="icon-only"></mat-icon>
+          </button>
+        </span>
+        <span size="2"> </span>
+        <span size="5">
+          <button>
+            <mat-icon name="remove" slot="icon-only"></mat-icon>
+          </button>
+        </span>
+      </mat-row>
+    </mat-card-content> -->
+<!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+<!-- </mat-card>
+  <div class="text-center"></div> -->
